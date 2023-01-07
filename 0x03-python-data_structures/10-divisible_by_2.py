@@ -6,5 +6,5 @@ def divisible_by_2(my_list=[]):
     """
     bool_list = []
     for integer in my_list:
-        bool_list.append(bool(integer % 2))
+        bool_list.append(not bool(integer % 2))
     return bool_list
