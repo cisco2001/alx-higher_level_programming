@@ -6,7 +6,6 @@ if number < 0:
     last_digit = (number % -10) * -1
 else:
     last_digit = number % 10
-print(last_digit)
 string = "Last digit of"
 if last_digit > 5:
     print(f"{string} {number} is {last_digit} and is greater than 5")
