@@ -4,4 +4,6 @@
 
 
 class Rectangle:
+    """ modelling a rectangle using python class
+    """
     pass
