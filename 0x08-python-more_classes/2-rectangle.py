@@ -4,21 +4,21 @@
 
 
 class Rectangle:
+    """ A rectangle with specified width and height
+    """
     def __init__(self, width=0, height=0):
-        """ Initializes width and height of a rectangle
-        """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Retrieve rectangle width
+        """ retrieve rectangle width
         """
         return self.__width
 
     @width.setter
     def width(self, width):
-        """Set Rectangle width
+        """set rectangle width
         """
         if isinstance(width, int):
             if width >= 0:
@@ -30,13 +30,13 @@ class Rectangle:
 
     @property
     def height(self):
-        """Retrieve rectangle height
+        """ retrieve rectangle height
         """
         return self.__height
 
     @height.setter
     def height(self, height):
-        """Set reactangle height
+        """ set rectangle height
         """
         if isinstance(height, int):
             if height >= 0:
@@ -44,10 +44,10 @@ class Rectangle:
             else:
                 raise ValueError("height must be >= 0")
         else:
-            raise TypeError("width must be an integer")
+            raise TypeError("height must be an integer")
 
     def area(self):
-        """ computer area of a rectangle
+        """ computes area of a rectangle
         """
         return self.width * self.height
 
