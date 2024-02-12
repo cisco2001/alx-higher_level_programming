@@ -63,6 +63,8 @@ class Rectangle:
         """ returns string representation of 'Rectangle' instance
         """
         shape = ""
+        if self.width == 0 or self.height == 0:
+            return shape
         for i in range(0, self.height):
             shape += ("#" * self.width)
             if i != self.height - 1:
