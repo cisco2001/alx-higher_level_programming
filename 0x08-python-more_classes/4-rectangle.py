@@ -59,6 +59,11 @@ class Rectangle:
         else:
             return 2 * (self.height + self.width)
 
+    def __repr__(self):
+        """method that returns string representation of an instance
+        """
+        return 'Rectangle({},{})'.format(self.width, self.height)
+    
     def __str__(self):
         """ returns string representation of 'Rectangle' instance
         """
@@ -70,8 +75,3 @@ class Rectangle:
             if i != self.height - 1:
                 shape += "\n"
         return shape
-
-    def __repr__(self):
-        """method that returns string representation of an instance
-        """
-        return 'Rectangle({},{})'.format(self.width, self.height)
